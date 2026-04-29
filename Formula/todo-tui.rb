@@ -6,11 +6,11 @@ class TodoTui < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/PentiumRabbit/todo-tui/releases/download/v#{version}/todo-tui-aarch64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_ARM64"
+      url "https://github.com/PentiumRabbit/todo-tui/releases/download/v0.1.0/todo-tui-aarch64-apple-darwin.tar.gz"
+      sha256 "37579b6106a166feaa1428ae33dbe0468696a8afcfc35810a2bf2c21fb88c64a"
     else
-      url "https://github.com/PentiumRabbit/todo-tui/releases/download/v#{version}/todo-tui-x86_64-apple-darwin.tar.gz"
-      sha256 "PLACEHOLDER_X86_64"
+      url "https://github.com/PentiumRabbit/todo-tui/releases/download/v0.1.0/todo-tui-x86_64-apple-darwin.tar.gz"
+      sha256 "e85fa9aa1184aaaf08c927f13c44a6819fbc25fb3d0acbaa6249f75b043dd5f2"
     end
   end
 
@@ -19,6 +19,6 @@ class TodoTui < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/todo-tui --version 2>&1", 1)
+    assert_match version.to_s, shell_output("\#{bin}/todo-tui --version 2>&1", 1)
   end
 end
