@@ -1,12 +1,12 @@
 cask "noteyard" do
-  version "0.1.10"
+  version "0.1.11"
 
   on_arm do
-    sha256 "18e558d7d1f06046d4c1266413d974d1c3fa47b590039d97e9cb175eca842ab6"
+    sha256 "b4e878e226a796169601adad8ce30a88e2946677d1a5c30ba7bd90354594193c"
     url "https://github.com/PentiumRabbit/noteyard/releases/download/v#{version}/noteyard_#{version}_aarch64.dmg"
   end
   on_intel do
-    sha256 "14a54f4729944440afcc714900d33bb4143024b2ae2d72b5fb3253f19609fbdf"
+    sha256 "fcfde576cd1d97b3ee46ba57ab1b04c1593349a4d4045a78da7aa72117f403ac"
     url "https://github.com/PentiumRabbit/noteyard/releases/download/v#{version}/noteyard_#{version}_x64.dmg"
   end
 
