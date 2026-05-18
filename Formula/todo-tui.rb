@@ -1,16 +1,16 @@
 class TodoTui < Formula
   desc "Keyboard-driven terminal todo manager built with Rust and ratatui"
   homepage "https://github.com/PentiumRabbit/todo-tui"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/PentiumRabbit/todo-tui/releases/download/v0.3.0/todo-tui-aarch64-apple-darwin.tar.gz"
-      sha256 "30d5818db806a243cd018c7fb3486e88c26f73e03caa20d44afc85703bce1164"
+      url "https://github.com/PentiumRabbit/todo-tui/releases/download/v0.4.0/todo-tui-aarch64-apple-darwin.tar.gz"
+      sha256 "ae72c45c86d3beb583ffd78c575c03da9e6e49632a2d0c257fe46c64fb87b7b0"
     else
-      url "https://github.com/PentiumRabbit/todo-tui/releases/download/v0.3.0/todo-tui-x86_64-apple-darwin.tar.gz"
-      sha256 "f3c61b778abe6aa462a3065e1a980c51320241a96ca9537dc6bdb1bd6c67a6a6"
+      url "https://github.com/PentiumRabbit/todo-tui/releases/download/v0.4.0/todo-tui-x86_64-apple-darwin.tar.gz"
+      sha256 "c18691970fd95c0264a17e9c51723997fd2797a96f99f91dbed360ed0b555a0f"
     end
   end
 
